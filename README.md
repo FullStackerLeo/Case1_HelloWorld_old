@@ -47,7 +47,7 @@ Support
 2. Facebook: 
 3. Twitter: https://twitter.com/hypechor
 4. Youtube: https://youtu.be/-fGgwyymOyI
-5. Tiktok
+5. Tiktok: https://www.tiktok.com/@androidcase
 6. http://hypech.github.io
 7. http://hypech.com
 8. info@hypech.com
