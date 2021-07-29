@@ -1,6 +1,6 @@
 ![Apache-2.0](https://img.shields.io/badge/license-Apache-blue)  [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-# Case9Login_Room
+# Case1_HelloWorld
 
 Android Room Case
 
@@ -44,7 +44,6 @@ Support
 
 1. GitHub: https://github.com/hypech/
 2. Stack Overflow: https://stackoverflow.com/story/hypech
-2. Facebook: 
 3. Twitter: https://twitter.com/hypechor
 4. Youtube: https://youtu.be/-fGgwyymOyI
 5. Tiktok: https://www.tiktok.com/@androidcase
