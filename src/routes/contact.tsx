@@ -2,6 +2,7 @@ import { Form } from "react-router-dom";
 
 export default function Contact() {
     const contact = {
+        id: "id",
         first: "Your",
         last: "Name",
         avatar: "https://robohash.org/you.png?size=200x200",
@@ -16,8 +17,7 @@ export default function Contact() {
                 <img
                     key={contact.avatar}
                     src={
-                        contact.avatar ||
-                        `https://robohash.org/${contact.id}.png?size=200x200`
+                        contact.avatar || `https://robohash.org/${contact.id}.png?size=200x200`
                     }
                 />
             </div>
@@ -31,7 +31,7 @@ export default function Contact() {
                     ) : (
                         <i>No Name</i>
                     )}{" "}
-                    <Favorite contact={contact} />
+                    {/* <Favorite contact={contact} /> */}
                 </h1>
 
                 {contact.twitter && (
@@ -72,21 +72,21 @@ export default function Contact() {
     );
 }
 
-function Favorite({ contact }) {
-    const favorite = contact.favorite;
-    return (
-        <Form method="post">
-            <button
-                name="favorite"
-                value={favorite ? "false" : "true"}
-                aria-label={
-                    favorite
-                        ? "Remove from favorites"
-                        : "Add to favorites"
-                }
-            >
-                {favorite ? "★" : "☆"}
-            </button>
-        </Form>
-    );
-}
+// function Favorite({ contact }) {
+//     const favorite = contact.favorite;
+//     return (
+//         <Form method="post">
+//             <button
+//                 name="favorite"
+//                 value={favorite ? "false" : "true"}
+//                 aria-label={
+//                     favorite
+//                         ? "Remove from favorites"
+//                         : "Add to favorites"
+//                 }
+//             >
+//                 {favorite ? "★" : "☆"}
+//             </button>
+//         </Form>
+//     );
+// }

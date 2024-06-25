@@ -9,7 +9,7 @@ const UseReducer = () => {
         RESET: 'reset',
     }
 
-    const reducer = (state, action) => {
+    const reducer = (state:any, action:any) => {
         switch (action) {
             case types.INCREMENT: return { count: state.count + 1 };
             case types.DECREMENT: return { count: state.count - 1 };

@@ -1,4 +1,4 @@
-import React, { useState, createContext, ReactNode, FC, useContext } from 'react';
+import { useState, createContext, ReactNode, FC, } from 'react';
 
 // Define the context type
 interface CountContextType {
