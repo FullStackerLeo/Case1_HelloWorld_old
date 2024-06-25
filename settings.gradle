@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Case 1 Hello World"
