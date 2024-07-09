@@ -10,6 +10,9 @@ import UseReducer from '../components/StateHooks/useReducer.tsx'
 import ReactContext from '../components/StateHooks/reactContext.tsx'
 import CountProvider from '../components/StateHooks/reactContext_';
 import TanStackQuery from '../components/StateHooks/tanstackquery.tsx';
+import Todo from '../components/Todo/index.tsx'
+import TodoRegular from '../components/Todo/todoregular.tsx'
+import TodoRedux from "../components/Todo/todoredux.tsx";
 
 export const router = createBrowserRouter([
     {
@@ -21,6 +24,9 @@ export const router = createBrowserRouter([
             { path: "/statehooks/useReducer", element: <UseReducer />, },
             { path: "/statehooks/reactContext", element: <ReactContext />, },
             { path: "/tanstackquery", element: <TanStackQuery />, },
+            { path: "/todo", element: <Todo />, },
+            { path: "/todo/todoregular", element: <TodoRegular />, },
+            { path: "/todo/todoredux", element: <TodoRedux />, },
         ],
     },
 ]);
@@ -46,6 +52,7 @@ export default function Root() {
                             <li><Link to={`/`}>Home</Link></li>
                             <li><Link to={"/statehooks"}>State Hooks</Link></li>
                             <li><Link to={`/tanstackquery`}>TanStack Query</Link></li>
+                            <li><Link to={`/todo`}>Todo</Link></li>
                         </ul>
                     </nav>
                 </div>
