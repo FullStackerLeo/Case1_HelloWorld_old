@@ -8,11 +8,13 @@ import StateHooks from '../components/StateHooks/index.tsx';
 import UseState from '../components/StateHooks/useState.tsx'
 import UseReducer from '../components/StateHooks/useReducer.tsx'
 import ReactContext from '../components/StateHooks/reactContext.tsx'
+import ReduxCountDown from '../components/StateHooks/reduxCountDown.tsx'
 import CountProvider from '../components/StateHooks/reactContext_';
 import TanStackQuery from '../components/StateHooks/tanstackquery.tsx';
 import Todo from '../components/Todo/index.tsx'
-import TodoRegular from '../components/Todo/todoregular.tsx'
-import TodoRedux from "../components/Todo/todoredux.tsx";
+import TodoRedux from "../components/Todo/TodoRedux.tsx";
+import TodoRegular from "../components/Todo/TodoRegular.tsx";
+import TasklyRegular from "../components/Todo/TasklyRegular.tsx";
 
 export const router = createBrowserRouter([
     {
@@ -23,10 +25,12 @@ export const router = createBrowserRouter([
             { path: "/statehooks/useState", element: <UseState />, },
             { path: "/statehooks/useReducer", element: <UseReducer />, },
             { path: "/statehooks/reactContext", element: <ReactContext />, },
+            { path: "/statehooks/reduxCountDown", element: <ReduxCountDown />, },
             { path: "/tanstackquery", element: <TanStackQuery />, },
             { path: "/todo", element: <Todo />, },
             { path: "/todo/todoregular", element: <TodoRegular />, },
             { path: "/todo/todoredux", element: <TodoRedux />, },
+            { path: "/todo/tasklyregular", element: <TasklyRegular />, },
         ],
     },
 ]);
@@ -50,7 +54,7 @@ export default function Root() {
                     <nav>
                         <ul>
                             <li><Link to={`/`}>Home</Link></li>
-                            <li><Link to={"/statehooks"}>State Hooks</Link></li>
+                            <li><Link to={"/statehooks"}>Count Down</Link></li>
                             <li><Link to={`/tanstackquery`}>TanStack Query</Link></li>
                             <li><Link to={`/todo`}>Todo</Link></li>
                         </ul>

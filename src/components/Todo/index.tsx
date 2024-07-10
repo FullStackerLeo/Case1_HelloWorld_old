@@ -7,9 +7,11 @@ const Todo = () => (
             <ul>
                 <li><Link to={"todoregular"}>Todo Regular</Link></li>
                 <li><Link to={"todoredux"}>Todo Redux</Link></li>
+                <li><Link to={"tasklyRegular"}>Taskly Regular</Link></li>
             </ul>
         </nav>
 
     </div>
 )
+
 export default Todo

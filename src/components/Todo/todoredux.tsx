@@ -1,4 +1,17 @@
-import {useState} from 'react'
+import { VisibilityFilters } from './redux_components/VisibilityFilters';
+
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+
+const initialState = {
+    todos: [
+      {        id: 1,        text: "你好, 图雀",        completed: false      },
+      {        id: 2,        text: "我是一只小小小小图雀",        completed: false      },
+      {        id: 3,        text: "小若燕雀，亦可一展宏图！",        completed: false      }
+    ],
+    filter: VisibilityFilters.SHOW_ALL
+  };
+
 
 const TodoRedux = () => {
     const [count, setCount] = useState(110);
@@ -19,4 +32,5 @@ const TodoRedux = () => {
 
     )
 }
+
 export default TodoRedux
