@@ -15,6 +15,7 @@ import Todo from '../components/Todo/index.tsx'
 import TodoRedux from "../components/Todo/TodoRedux.tsx";
 import TodoRegular from "../components/Todo/TodoRegular.tsx";
 import TasklyRegular from "../components/Todo/TasklyRegular.tsx";
+import CountRedux from "../components/StateHooks/CountRedux.tsx";
 
 export const router = createBrowserRouter([
     {
@@ -26,6 +27,7 @@ export const router = createBrowserRouter([
             { path: "/statehooks/useReducer", element: <UseReducer />, },
             { path: "/statehooks/reactContext", element: <ReactContext />, },
             { path: "/statehooks/reduxCountDown", element: <ReduxCountDown />, },
+            { path: "/statehooks/countredux", element: <CountRedux />, },
             { path: "/tanstackquery", element: <TanStackQuery />, },
             { path: "/todo", element: <Todo />, },
             { path: "/todo/todoregular", element: <TodoRegular />, },
